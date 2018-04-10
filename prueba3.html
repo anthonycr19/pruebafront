@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        
+        function validador(contenedores) {
+            for(i=0;i<contenedores.length;i++){
+                document.write(contenedores[i]['name']);
+                console.log(contenedores[i]['name']);
+            }
+        }
+        var contenedores = [{name: 'Pepe', edad: 11}, {name: 'Juan', edad: 22}, {name: 'Lalo', edad: 23}];
+
+        validador(contenedores);
+
+    </script>
+</body>
+</html>

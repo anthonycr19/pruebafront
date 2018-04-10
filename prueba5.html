@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validador() {
+        var i = 1;
+        var suma = 0;
+        var numero = 0;
+        var arrays = [];
+
+        do{
+            numero = Math.pow(i, 3);
+            i = i +1;
+            arrays.push(numero);
+        }
+        while(numero<1000);
+
+        for (i=0;i<arrays.length;i++){
+            console.log(arrays[i]);
+            if(arrays[i]%2!=0){
+                suma = suma + arrays[i];
+            }
+        }
+        return suma
+    }
+    validador();
+</script>
+</body>
+</html>

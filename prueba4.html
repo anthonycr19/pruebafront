@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function validador(contenedores) {
+        for(i=0;i<contenedores.length;i++){
+            if(contenedores[i]['donacion']===true && contenedores[i]['esposas'].length >= 2 ){
+                document.write(contenedores[i]['name']);
+                console.log(contenedores[i]['name']);
+                console.log(contenedores[i]['esposas'].length);
+            }
+        }
+    }
+
+    var contenedores = [
+            {name: 'Pepe', donacion: true, esposas: ['Rosangela', 'Mayte']},
+            {name: 'Juan', donacion: false, esposas: ['Yajaira']},
+            {name: 'Lalo', donacion: true, esposas: []}
+    ];
+
+    validador(contenedores);
+
+</script>
+</body>
+</html>
